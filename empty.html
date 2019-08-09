@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="http://www.suning.com/favicon.ico" type="image/x-icon"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>PC</title>
+<link rel="stylesheet" type="text/css" href="style/css/demo_main.css" />
+</head>
+<body>
+
+<!--content [[-->
+<div class="main-body">
+	<input class="dialog_input birth_input" placeholder="请选择出生日期" id="birth" readonly="readonly">
+</div>
+<div class="snPages mt20 mr15">
+    <a href="javascript:void(0)" class="prev hide"><b></b> 上一页</a>
+    <span class="prev"><b></b> 上一页</span>
+    <span class="page-box"></span>
+    <a href="javascript:void(0)" class="next"><b></b> 下一页</a>
+    <span class='next hide'><b></b> 下一页</span>
+    <div>
+        向第<input type="text" class="snInput" onkeyup="if(this.value==this.value2)return;if(this.value.search(/^[0-9]*$/)==-1)this.value=(this.value2)?this.value2:'';else this.value2=this.value;" maxlength="6"/>页<input type="button" value="跳转" class="pagesubmit"/>
+    </div>
+</div>
+<div class="a"></div>
+<!--content ]]-->
+<script type="text/html" id="dialog">
+    <div class="dialog_warn">
+        <i class="fail"></i>
+        <h2>请选择要删除的乘客</h2>
+        <div class="h50">
+            <div class="confirm mr10 fl ml0">确&nbsp;定</div>
+        </div>
+    </div>
+</script>
+<script type="text/javascript" data-main="scripts/main/finance-menu.js" src="scripts/lib/require/require.min.js"></script>
+</body>
+</html>
